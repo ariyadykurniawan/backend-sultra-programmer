@@ -15,9 +15,19 @@ public class Employee {
     private String address;
     @Column(name = "grade")
     private String grade;
+    @Column(name = "age")
+    private Integer age;
 
     public Long getId() {
         return id;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public void setId(Long id) {
